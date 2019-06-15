@@ -12,7 +12,6 @@ import cc.mrbird.febs.system.entity.User;
 import cc.mrbird.febs.system.service.IUserService;
 import com.wf.captcha.Captcha;
 import org.apache.shiro.authc.*;
-import org.apache.shiro.subject.Subject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -52,9 +51,6 @@ public class LoginController extends BaseController {
         password = MD5Util.encrypt(username.toLowerCase(), password);
         UsernamePasswordToken token = new UsernamePasswordToken(username, password, rememberMe);
         try {
-            Subject subject = getSubject();
-            if (subject != null)
-                subject.logout();
             super.login(token);
             // 保存登录日志
             LoginLog loginLog = new LoginLog();
