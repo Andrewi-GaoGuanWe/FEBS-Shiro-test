@@ -101,7 +101,7 @@ FEBS-Vue | FEBS-Shiro前后端分离版本，前端架构采用Vue全家桶。 |
 
 #### 前端
 - [Layui 2.5.4](https://www.layui.com/)
-- [Nepadmikn](https://gitee.com/june000/nep-admin)
+- [Nepadmin](https://gitee.com/june000/nep-admin)
 - [formSelects 4.x 多选框](https://hnzzmsf.github.io/example/example_v4.html)
 - [eleTree 树组件](https://layuiextend.hsianglee.cn/eletree/)
 - [formSelect.js树形下拉](https://wujiawei0926.gitee.io/treeselect/docs/doc.html)
