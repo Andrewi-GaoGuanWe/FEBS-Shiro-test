@@ -101,6 +101,7 @@ FEBS-Vue | FEBS-Shiro前后端分离版本，前端架构采用Vue全家桶。 |
 
 #### 前端
 - [Layui 2.5.4](https://www.layui.com/)
+- [Nepadmikn](https://gitee.com/june000/nep-admin)
 - [formSelects 4.x 多选框](https://hnzzmsf.github.io/example/example_v4.html)
 - [eleTree 树组件](https://layuiextend.hsianglee.cn/eletree/)
 - [formSelect.js树形下拉](https://wujiawei0926.gitee.io/treeselect/docs/doc.html)
@@ -124,9 +125,9 @@ FEBS-Vue | FEBS-Shiro前后端分离版本，前端架构采用Vue全家桶。 |
 ![screenshot](screenshot/pad_screenshot_2.jpg)
 ![screenshot](screenshot/pad_screenshot_3.jpg)
 ### 浏览器兼容
-| [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/edge/edge_48x48.png" alt="IE / Edge" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)</br>IE / Edge | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/firefox/firefox_48x48.png" alt="Firefox" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)</br>Firefox | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/chrome/chrome_48x48.png" alt="Chrome" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)</br>Chrome | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/safari/safari_48x48.png" alt="Safari" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)</br>Safari |
-| --------- | --------- | --------- | --------- |
-| IE10+, Edge| last 15 versions| last 15 versions| last 10 versions
+|[<img src="https://raw.github.com/alrra/browser-logos/master/src/archive/internet-explorer_9-11/internet-explorer_9-11_48x48.png" alt="Edge" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)</br>IE| [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/edge/edge_48x48.png" alt="Edge" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)</br>Edge | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/firefox/firefox_48x48.png" alt="Firefox" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)</br>Firefox | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/chrome/chrome_48x48.png" alt="Chrome" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)</br>Chrome | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/safari/safari_48x48.png" alt="Safari" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)</br>Safari |[<img src="https://raw.github.com/alrra/browser-logos/master/src/opera/opera_48x48.png" alt="Edge" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)</br>Opera
+| --------- | --------- | --------- | --------- | --------- |--------- |
+|IE 10+| Edge| last 15 versions| last 15 versions| last 10 versions| last 15 versions
 ### 参与贡献
 欢迎提交PR一起完善项目，以下为提PR并合并的小伙伴（排名不分先后）：
 
