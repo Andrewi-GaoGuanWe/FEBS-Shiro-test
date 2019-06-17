@@ -49,6 +49,9 @@ public class ShiroConfig {
     @Value("${spring.redis.timeout}")
     private int timeout;
 
+    @Value("${spring.redis.database:0}")
+    private int database;
+
     /**
      * shiro 中配置 redis 缓存
      *
@@ -63,6 +66,7 @@ public class ShiroConfig {
         if (StringUtils.isNotBlank(password))
             redisManager.setPassword(password);
         redisManager.setTimeout(timeout);
+        redisManager.setDatabase(database);
         return redisManager;
     }
 
