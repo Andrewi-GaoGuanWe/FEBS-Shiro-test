@@ -25,6 +25,7 @@
                             </div>
                         </div>
                     </form>
+                    <span class="febs-alert-base febs-alert-success" id="count"></span>
                     <table lay-filter="onlineTable" lay-data="{id: 'onlineTable'}"></table>
                 </div>
             </div>
@@ -117,7 +118,10 @@
                     {field: 'location', title: '登录地点', minWidth: 180},
                     {title: '状态', templet: '#online-status'},
                     {title: '操作', toolbar: '#online-option'}
-                ]]
+                ]],
+                done: function (r) {
+                    $view.find('span#count').html('当前共<strong> ' + r.count + ' </strong>人在线')
+                }
             });
         }
 
