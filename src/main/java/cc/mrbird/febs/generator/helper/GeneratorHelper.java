@@ -1,6 +1,7 @@
 package cc.mrbird.febs.generator.helper;
 
 import cc.mrbird.febs.common.annotation.Helper;
+import cc.mrbird.febs.common.utils.AddressUtil;
 import cc.mrbird.febs.common.utils.FebsUtil;
 import cc.mrbird.febs.generator.entity.Column;
 import cc.mrbird.febs.generator.entity.GeneratorConfig;
@@ -11,11 +12,13 @@ import freemarker.template.Configuration;
 import freemarker.template.Template;
 import freemarker.template.TemplateExceptionHandler;
 import lombok.extern.slf4j.Slf4j;
+import org.apache.commons.io.FileUtils;
 import org.apache.commons.lang3.StringUtils;
 
 import java.io.*;
 import java.nio.charset.StandardCharsets;
 import java.util.List;
+import java.util.Objects;
 
 /**
  * @author MrBird
@@ -122,7 +125,14 @@ public class GeneratorHelper {
 
     private Template getTemplate(String templateName) throws Exception {
         Configuration configuration = new freemarker.template.Configuration(Configuration.VERSION_2_3_23);
-        String templatePath = GeneratorHelper.class.getResource("/generator/templates").getPath();
+        String templatePath = GeneratorHelper.class.getResource("/generator/templates/").getPath();
+        File file = new File(templatePath);
+        if (!file.exists()) {
+            templatePath = System.getProperties().getProperty("java.io.tmpdir");
+            System.out.println(templatePath);
+            file = new File(templatePath + "/" + templateName);
+            FileUtils.copyInputStreamToFile(Objects.requireNonNull(AddressUtil.class.getClassLoader().getResourceAsStream("classpath:generator/templates/" + templateName)), file);
+        }
         configuration.setDirectoryForTemplateLoading(new File(templatePath));
         configuration.setDefaultEncoding("UTF-8");
         configuration.setTemplateExceptionHandler(TemplateExceptionHandler.IGNORE_HANDLER);
