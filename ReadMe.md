@@ -1,5 +1,4 @@
 ### FEBS-Shiro 2.0
-![https://img.shields.io/badge/build-success-brightgreen.svg?longCache=true&style=flat-square](https://img.shields.io/badge/build-success-brightgreen.svg?longCache=true&style=flat-square)
 ![https://img.shields.io/badge/license-MIT-blue.svg?longCache=true&style=flat-square](https://img.shields.io/badge/license-MIT-blue.svg?longCache=true&style=flat-square)
 ![https://img.shields.io/badge/download-1k%2Fm-green.svg?longCache=true&style=flat-square](https://img.shields.io/badge/download-1k%2Fm-green.svg?longCache=true&style=flat-square)
 ![https://img.shields.io/badge/springboot-2.1.3-yellow.svg?style=flat-square](https://img.shields.io/badge/springboot-2.1.3-yellow.svg?style=flat-square)
