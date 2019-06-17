@@ -129,7 +129,6 @@ public class GeneratorHelper {
         File file = new File(templatePath);
         if (!file.exists()) {
             templatePath = System.getProperties().getProperty("java.io.tmpdir");
-            System.out.println(templatePath);
             file = new File(templatePath + "/" + templateName);
             FileUtils.copyInputStreamToFile(Objects.requireNonNull(AddressUtil.class.getClassLoader().getResourceAsStream("classpath:generator/templates/" + templateName)), file);
         }
