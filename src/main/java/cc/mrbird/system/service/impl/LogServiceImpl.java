@@ -96,7 +96,7 @@ public class LogServiceImpl extends BaseService<SysLog> implements LogService {
         save(log);
     }
 
-    @SuppressWarnings("unchecked")
+    @SuppressWarnings("all")
     private StringBuilder handleParams(StringBuilder params, Object[] args, List paramNames) throws JsonProcessingException {
         for (int i = 0; i < args.length; i++) {
             if (args[i] instanceof Map) {
