@@ -211,8 +211,4 @@ public class FebsActuatorHelper {
         return new BigDecimal(String.valueOf(value))
                 .divide(DECIMAL, 3, RoundingMode.HALF_UP).doubleValue();
     }
-
-    public static void main(String[] args) {
-        System.out.println(System.currentTimeMillis());
-    }
 }
