@@ -25,7 +25,9 @@
                             </div>
                         </div>
                     </form>
-                    <span class="febs-alert-base febs-alert-success" id="count"></span>
+                    <div class="febs-hide">
+                        <span class="febs-alert-base febs-alert-success" id="count"></span>
+                    </div>
                     <table lay-filter="onlineTable" lay-data="{id: 'onlineTable'}"></table>
                 </div>
             </div>
@@ -121,6 +123,7 @@
                 ]],
                 done: function (r) {
                     $view.find('span#count').html('当前共<strong> ' + r.count + ' </strong>人在线')
+                        .parents('div.febs-hide').show();
                 }
             });
         }
