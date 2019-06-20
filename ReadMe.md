@@ -149,7 +149,7 @@ FEBS-Vue | FEBS-Shiro前后端分离版本，前端架构采用Vue全家桶。 |
 
 为何2.0前端选择LayUI？LayUI是一款优秀的国产前端框架，像Layer等组件非常契合国内后台系统的需求，所以LayUI成了我的不二之选。
 
-其实写这段也是为了回复偶然看到的一个评论：
+其实写这段也是为了回复偶然看到的一个[评论](https://www.toutiao.com/a6704144784711221772/?tt_from=mobile_qq&utm_campaign=client_share&timestamp=1560960905&app=news_article&utm_source=mobile_qq&utm_medium=toutiao_android&req_id=201906200015050101520191684437A62&group_id=6704144784711221772)：
 
 ![](screenshot/comment.png)
 
