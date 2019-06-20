@@ -18,7 +18,6 @@ import com.baomidou.mybatisplus.core.toolkit.StringPool;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.apache.commons.lang3.StringUtils;
-import org.apache.shiro.SecurityUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Propagation;
@@ -99,6 +98,7 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements IU
     public void updateUser(User user) {
         // 更新用户
         user.setPassword(null);
+        user.setUsername(null);
         user.setModifyTime(new Date());
         updateById(user);
         // 更新关联角色
@@ -174,6 +174,9 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements IU
     @Override
     @Transactional
     public void updateProfile(User user) {
+        user.setUsername(null);
+        user.setRoleId(null);
+        user.setPassword(null);
         updateById(user);
     }
 
