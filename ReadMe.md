@@ -143,22 +143,6 @@ FEBS-Vue | FEBS-Shiro前后端分离版本，前端架构采用Vue全家桶。 |
 <a href="https://github.com/Harrison0x80">
     <img src="https://avatars2.githubusercontent.com/u/8622915?s=400&v=4" width="45px"></a>
 
-### 为何弄个2.0？
-在2017年末的时候，偶然接触了Shiro这套安全框架，在学习完后萌发了自己搭建一套权限系统的想法，于是[FEBS-Shiro第一版](https://github.com/wuyouzhuguli/FEBS-Shiro/tree/mysql)
-就诞生了。当时并没有太多考虑，所以前端框架选择了一套符合自己审美的单页框架。但单页的框架局限性较大，不适合企业应用，于是在第一版发布近一年半后，我突然又萌发了出个多标签页的2.0版本。
-
-为何2.0前端选择LayUI？LayUI是一款优秀的国产前端框架，像Layer等组件非常契合国内后台系统的需求，所以LayUI成了我的不二之选。
-
-其实写这段也是为了回复偶然看到的一个[评论](https://www.toutiao.com/a6704144784711221772/?tt_from=mobile_qq&utm_campaign=client_share&timestamp=1560960905&app=news_article&utm_source=mobile_qq&utm_medium=toutiao_android&req_id=201906200015050101520191684437A62&group_id=6704144784711221772)：
-
-![](screenshot/comment.png)
-
-不可否认的是，目前权限系统确实太多太多了，这套采用传统架构，没有使用Spring Cloud，没有使用Vue，React，前后端并没有分离的权限系统确实没有什么新鲜的地方。
-但要做到美观易用的同时又支持多浏览器，多分辨率布局，要考量的东西还是不少。并且在前后端一套系统写下来的过程中，自己也能领会到一些东西。相信无论是学习Spring Boot，Shiro还是前端代码的封装，这套系统都能给你带来一定的帮助。
-
-总之，开源并不是为了炫技，也不是为了获得额外收入，只是希望自己在学习的过程中也能帮助到一些人。还有我也不是什么高级工程师，只是一个名不见经传的小员工，开发这套系统也用不着3个月，
-端午3天加一个周末足够了。
-
 ### 反馈交流
 加入QQ群和大家一起~~交流~~吹水：
 
